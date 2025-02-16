@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryOfGamesMVC.Domain", "LibraryOfGamesMVC.Domain\LibraryOfGamesMVC.Domain.csproj", "{AD7BF9F7-8E31-4403-97EB-627C7E354E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryOfGamesMVC.Infrastracture", "LibraryOfGamesMVC.Infrastracture\LibraryOfGamesMVC.Infrastracture.csproj", "{A545AC7F-45B5-48BB-AFBE-0EE777951A89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD7BF9F7-8E31-4403-97EB-627C7E354E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7BF9F7-8E31-4403-97EB-627C7E354E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7BF9F7-8E31-4403-97EB-627C7E354E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7BF9F7-8E31-4403-97EB-627C7E354E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A545AC7F-45B5-48BB-AFBE-0EE777951A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A545AC7F-45B5-48BB-AFBE-0EE777951A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A545AC7F-45B5-48BB-AFBE-0EE777951A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A545AC7F-45B5-48BB-AFBE-0EE777951A89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FC54E04-554B-48C4-8226-B49304A71DFD}
+	EndGlobalSection
+EndGlobal

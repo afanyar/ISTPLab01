@@ -7,21 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryOfGamesMVC.Infrastracture.EntityConfigurations
+namespace LibraryOfGamesMVC.Infrastructure.EntityConfigurations;
+
+internal class DeveloperEntityTypeConfiguration : IEntityTypeConfiguration<Developer>
 {
-    internal class DeveloperEntityTypeConfiguration : IEntityTypeConfiguration<Developer>
+    public void Configure(EntityTypeBuilder<Developer> builder)
     {
-        public void Configure(EntityTypeBuilder<Developer> builder)
-        {
-            builder.HasKey(developer => developer.Id);
-            builder.Property(developer => developer.Id).UseIdentityColumn();
+        builder.HasKey(developer => developer.Id);
+        builder.Property(developer => developer.Id).UseIdentityColumn();
 
-            builder.Property(developer => developer.Name)
-                .IsRequired()
-                .HasMaxLength(50);
+        builder.Property(developer => developer.Name)
+            .IsRequired()
+            .HasMaxLength(50);
 
-            builder.Property(developer => developer.Description)
-                .HasMaxLength(500);
-        }
+        builder.Property(developer => developer.Description)
+            .HasMaxLength(500);
     }
 }

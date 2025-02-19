@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LibraryOfGamesMVC.Domain.Entities;
-using LibraryOfGamesMVC.Infrastracture.EntityConfigurations;
+using LibraryOfGamesMVC.Infrastructure.EntityConfigurations;
 
-namespace LibraryOfGamesMVC.Infrastracture;
+namespace LibraryOfGamesMVC.Infrastructure;
 
 public class LibraryOfGamesContext : DbContext
 {
@@ -21,7 +21,7 @@ public class LibraryOfGamesContext : DbContext
         modelBuilder.ApplyConfiguration(new GenreEntityTypeConfiguration());
         modelBuilder.ApplyConfiguration(new DeveloperEntityTypeConfiguration());
         modelBuilder.ApplyConfiguration(new GameEntityTypeConfiguration());
-        modelBuilder.ApplyConfiguration(new GamesAndGenresRelationshipEntityTypeConfiguration());
+        modelBuilder.ApplyConfiguration(new GameAndGenreEntityTypeConfiguration());
     }
 
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryOfGamesMVC.Infrastracture.EntityConfigurations
+namespace LibraryOfGamesMVC.Infrastructure.EntityConfigurations
 {
     internal class GenreEntityTypeConfiguration : IEntityTypeConfiguration<Genre>
     {

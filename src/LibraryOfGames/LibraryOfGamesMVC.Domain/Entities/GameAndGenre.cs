@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibraryOfGamesMVC.Domain.Entities;
 
-public class Bookmark : Entity, IAggregateRoot
+public class GameAndGenre : Entity, IAggregateRoot
 {
-    public int ProfileId { get; set; }
-    public Profile? Profile { get; set; }
-
     public int GameId { get; set; }
     public Game? Game { get; set; }
+
+    public int GenreId { get; set; }
+    public Genre? Genre { get; set; }
 }
